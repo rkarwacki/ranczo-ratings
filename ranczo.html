@@ -19,7 +19,7 @@
         }
 
         .season {
-            margin: 5px 0;
+            margin: 2px 0;
             display: flex;
             align-items: center;
         }
@@ -40,10 +40,20 @@
             text-align: center;
         }
 
+        .episode-number {
+            width: 40px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            margin: 2px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
         .episode {
             display: inline-block;
-            width: 40px;
-            height: 40px;
+            width: 60px;
+            height: 60px;
             text-align: center;
             line-height: 20px;
             margin: 2px;
@@ -53,15 +63,11 @@
         }
 
         .rating-1 { background-color: #ff0000; }
-        .rating-2 { background-color: #ff2300; }
-        .rating-3 { background-color: #ff4500; }
-        .rating-4 { background-color: #ff6800; }
-        .rating-5 { background-color: #ff8a00; }
-        .rating-6 { background-color: #ffad00; }
-        .rating-7 { background-color: #ffcf00; }
-        .rating-8 { background-color: #ffd700; }
-        .rating-9 { background-color: #a0c92e; }
-        .rating-10 { background-color: #008000; }
+        .rating-2 { background-color: #ff4500; }
+        .rating-3 { background-color: #ffa500; }
+        .rating-4 { background-color: #ffd700; }
+        .rating-5 { background-color: #a0c92e; }
+        .rating-6 { background-color: #008000; }
         /* Add more colors or customize as needed */
 
     </style>
@@ -743,7 +749,7 @@
             });
 
             // Define the number of normalization steps
-            const numSteps = 10;
+            const numSteps = 6;
 
             // Iterate through the data and organize it by season
             data.forEach(entry => {
@@ -756,10 +762,26 @@
                 }
 
                 // Normalize the rating value to a range between 1 and numSteps
-                const normalizedRating = Math.ceil((parseFloat(ratingValue) - minRating) / (maxRating - minRating) * numSteps);
+                const normalizedRating = Math.ceil(
+                    (parseFloat(ratingValue) - minRating) / (maxRating - minRating) * (numSteps - 1) + 1
+                );
 
                 seasonData.get(seasonNumber).push({ episodeNumber, normalizedRating });
             });
+
+            // Create HTML elements for episode numbers
+            const episodeNumbersDiv = document.createElement('div');
+            episodeNumbersDiv.className = 'season';
+            episodeNumbersDiv.innerHTML = '<div class="season-label"></div>'; // Empty space for season label
+
+            for (let i = 1; i <= 13; i++) {
+                const episodeNumberDiv = document.createElement('div');
+                episodeNumberDiv.className = 'episode-number';
+                episodeNumberDiv.textContent = i;
+                episodeNumbersDiv.appendChild(episodeNumberDiv);
+            }
+
+            tableContainer.appendChild(episodeNumbersDiv);
 
             // Create HTML elements for each season
             seasonData.forEach((episodes, seasonNumber) => {
@@ -768,7 +790,7 @@
 
                 const seasonLabel = document.createElement('div');
                 seasonLabel.className = 'season-label';
-                seasonLabel.textContent = `Sezon ${seasonNumber}`;
+                seasonLabel.textContent = `Season ${seasonNumber}`;
                 seasonDiv.appendChild(seasonLabel);
 
                 episodes.forEach(episode => {
@@ -776,7 +798,7 @@
 
                     const episodeDiv = document.createElement('div');
                     episodeDiv.className = `episode rating-${normalizedRating}`;
-                    episodeDiv.textContent = (normalizedRating * (maxRating - minRating) / numSteps + minRating).toFixed(2);
+                    episodeDiv.textContent = (normalizedRating / numSteps * (maxRating - minRating) + minRating).toFixed(2);
                     seasonDiv.appendChild(episodeDiv);
                 });
 

@@ -42,8 +42,6 @@ body {
     height: 100%;
 }
 
-
-
 .episode-label {
     display: flex;
     flex-direction: column;
@@ -92,7 +90,7 @@ body {
     display: none;
 }
 
-.episode:hover .tooltip {
+.episode:hover .episode:active .tooltip {
     display: block;
 }
 

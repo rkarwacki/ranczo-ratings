@@ -89,7 +89,7 @@ body {
     display: none;
 }
 
-.episode:active .tooltip {
+.episode:hover .tooltip {
     display: block;
 }
 
@@ -97,6 +97,7 @@ body {
     display: flex;
     margin-top: 20px;
     margin-left: 80px;
+    margin-bottom: 80px;
 
 }
 

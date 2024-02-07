@@ -8,12 +8,11 @@ body {
 .table-container, title {
     text-align: center;
     white-space: nowrap;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 .title {
-    margin-top: 30px;
-    margin-left: 80px;
+    min-width: 80px;
     }
 
 .season {
@@ -90,7 +89,7 @@ body {
     display: none;
 }
 
-.episode:hover .episode:active .tooltip {
+.episode:hover .episode:active .episode:focus .tooltip {
     display: block;
 }
 
@@ -113,6 +112,15 @@ body {
     font-weight: bold;
     font-size: 16px;
     color: #fff;
+}
+
+@media (max-width: 600px) {
+
+    .table-container {
+        text-align: center;
+        white-space: nowrap;
+        overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+    }
 }
 
 .legend-1 { background-color: #ff0000; }

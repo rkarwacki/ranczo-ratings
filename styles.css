@@ -4,20 +4,20 @@ body {
     margin: 0;
     padding: 0;
 }
-.title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.table-container, title {
+    text-align: center;
+    white-space: nowrap;
+    overflow-x: hidden;
 }
 
-.table-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+.title {
+    min-width: 80px;
+    }
 
 .season {
     display: flex;
+    vertical-align: top;
     align-items: center;
 }
 
@@ -27,10 +27,9 @@ body {
 }
 
 .season-label {
-    font-weight: bold;
     position: relative;
-    width: 80px; /* Adjust the width as needed */
-    text-align: right; /* Adjust the text alignment as needed */
+    min-width: 80px;
+    text-align: right;
 }
 
 .season-label::after {
@@ -38,7 +37,7 @@ body {
     position: absolute;
     top: 0;
     left: 100%;
-    width: 10px; /* Adjust as needed */
+    width: 10px;
     height: 100%;
 }
 
@@ -50,9 +49,11 @@ body {
 
 .season-label {
     text-align: center;
+    font-weight: bold;
 }
 
 .episode-number {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +76,6 @@ body {
     font-weight: bold;
     font-size: 12px;
     color: #fff;
-    cursor: pointer;
 }
 .tooltip {
     position: absolute;
@@ -89,20 +89,20 @@ body {
     display: none;
 }
 
-.episode:hover .tooltip {
+.episode:hover .episode:active .episode:focus .tooltip {
     display: block;
 }
 
 .legend {
     display: flex;
-    justify-content: center;
     margin-top: 20px;
+    margin-left: 80px;
 
 }
 
 .legend-box {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin: 0 5px;
     display: flex;
     justify-content: center;
@@ -112,6 +112,15 @@ body {
     font-weight: bold;
     font-size: 16px;
     color: #fff;
+}
+
+@media (max-width: 600px) {
+
+    .table-container {
+        text-align: center;
+        white-space: nowrap;
+        overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+    }
 }
 
 .legend-1 { background-color: #ff0000; }

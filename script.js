@@ -24,7 +24,7 @@ function createTable(data) {
         const seasonNumber = entry['seasonNumber'];
         const episodeNumber = entry['episodeNumber'];
         const episodeTitle = entry['episodeTitle'];
-        const ratingValue = parseFloat(entry['ratingValue']).toFixed(1);
+        const ratingValue = parseFloat(entry['ratingValue']).toFixed(2);
 
         if (!seasonData.has(seasonNumber)) {
             seasonData.set(seasonNumber, []);

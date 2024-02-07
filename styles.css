@@ -1,68 +1,64 @@
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
 
-        .table-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        .season {
-            display: flex;
-            align-items: center;
-        }
+.season {
+    display: flex;
+    align-items: center;
+}
 
-        .episode-label,
-        .season-label {
-            font-weight: bold;
-            margin-right: 10px;
-        }
+.episode-label,
+.season-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
 
-        .episode-label {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.episode-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        .season-label {
-            text-align: center;
-        }
+.season-label {
+    text-align: center;
+}
 
-        .episode-number {
-		display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60px;
-        height: 60px;
-        margin: 2px;
-        font-weight: bold;
-        font-size: 22px;
-        color: #000;
-        }
+.episode-number {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 60px;
+height: 60px;
+margin: 2px;
+font-weight: bold;
+font-size: 22px;
+color: #000;
+}
 
-        .episode {
-		display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60px;
-        height: 60px;
-        margin: 2px;
-        font-weight: bold;
-        font-size: 12px;
-        color: #fff;
-        }
+.episode {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 60px;
+height: 60px;
+margin: 2px;
+font-weight: bold;
+font-size: 12px;
+color: #fff;
+}
 
-        .rating-1 { background-color: #ff0000; }
-        .rating-2 { background-color: #ff4500; }
-        .rating-3 { background-color: #ffa500; }
-        .rating-4 { background-color: #ffd700; }
-        .rating-5 { background-color: #a0c92e; }
-        .rating-6 { background-color: #008000; }
-        /* Add more colors or customize as needed */
-
-    </style>
+.rating-1 { background-color: #ff0000; }
+.rating-2 { background-color: #ff4500; }
+.rating-3 { background-color: #ffa500; }
+.rating-4 { background-color: #ffd700; }
+.rating-5 { background-color: #a0c92e; }
+.rating-6 { background-color: #008000; }

@@ -1,652 +1,782 @@
 const jsonData = [
   {
-    "data-season-number": "1",
-    "data-episode-number": "1",
-    "ratingValue": "8.47031"
+    "episodeNumber": "1",
+    "seasonNumber": "1",
+    "ratingValue": "8.47031",
+    "episodeTitle": "Spadek"
   },
   {
-    "data-season-number": "1",
-    "data-episode-number": "2",
-    "ratingValue": "8.59485"
+    "episodeNumber": "2",
+    "seasonNumber": "1",
+    "ratingValue": "8.59485",
+    "episodeTitle": "Goście z zaświatów"
   },
   {
-    "data-season-number": "1",
-    "data-episode-number": "3",
-    "ratingValue": "8.56686"
+    "episodeNumber": "3",
+    "seasonNumber": "1",
+    "ratingValue": "8.56686",
+    "episodeTitle": "Ksiądz z inicjatywą"
   },
   {
-    "data-season-number": "1",
-    "data-episode-number": "4",
-    "ratingValue": "8.49702"
+    "episodeNumber": "4",
+    "seasonNumber": "1",
+    "ratingValue": "8.49702",
+    "episodeTitle": "Otrzeźwienie"
   },
   {
-    "data-season-number": "1",
-    "data-episode-number": "5",
-    "ratingValue": "8.49547"
+    "episodeNumber": "5",
+    "seasonNumber": "1",
+    "ratingValue": "8.49547",
+    "episodeTitle": "Wieść gminna"
   },
   {
-    "data-season-number": "1",
-    "data-episode-number": "6",
-    "ratingValue": "8.47515"
+    "episodeNumber": "6",
+    "seasonNumber": "1",
+    "ratingValue": "8.47515",
+    "episodeTitle": "Racja gminy"
   },
   {
-    "data-season-number": "1",
-    "data-episode-number": "7",
-    "ratingValue": "8.54475"
+    "episodeNumber": "7",
+    "seasonNumber": "1",
+    "ratingValue": "8.54475",
+    "episodeTitle": "Podwójny agent"
   },
   {
-    "data-season-number": "1",
-    "data-episode-number": "8",
-    "ratingValue": "8.52868"
+    "episodeNumber": "8",
+    "seasonNumber": "1",
+    "ratingValue": "8.52868",
+    "episodeTitle": "Kozy ofiarne"
   },
   {
-    "data-season-number": "1",
-    "data-episode-number": "9",
-    "ratingValue": "8.57985"
+    "episodeNumber": "9",
+    "seasonNumber": "1",
+    "ratingValue": "8.57985",
+    "episodeTitle": "Odwyk i antykoncepcja"
   },
   {
-    "data-season-number": "1",
-    "data-episode-number": "10",
-    "ratingValue": "8.63511"
+    "episodeNumber": "10",
+    "seasonNumber": "1",
+    "ratingValue": "8.63511",
+    "episodeTitle": "Porwanie"
   },
   {
-    "data-season-number": "1",
-    "data-episode-number": "11",
-    "ratingValue": "8.50711"
+    "episodeNumber": "11",
+    "seasonNumber": "1",
+    "ratingValue": "8.50711",
+    "episodeTitle": "Wspólny wróg"
   },
   {
-    "data-season-number": "1",
-    "data-episode-number": "12",
-    "ratingValue": "8.61659"
+    "episodeNumber": "12",
+    "seasonNumber": "1",
+    "ratingValue": "8.61659",
+    "episodeTitle": "Honor gminy"
   },
   {
-    "data-season-number": "1",
-    "data-episode-number": "13",
-    "ratingValue": "8.75394"
+    "episodeNumber": "13",
+    "seasonNumber": "1",
+    "ratingValue": "8.75394",
+    "episodeTitle": "Wielkie wybory"
   },
     {
-    "data-season-number": "2",
-    "data-episode-number": "14",
-    "ratingValue": "8.60104"
+    "episodeNumber": "14",
+    "seasonNumber": "2",
+    "ratingValue": "8.60104",
+    "episodeTitle": "Sztuka i władza"
   },
   {
-    "data-season-number": "2",
-    "data-episode-number": "15",
-    "ratingValue": "8.52491"
+    "episodeNumber": "15",
+    "seasonNumber": "2",
+    "ratingValue": "8.52491",
+    "episodeTitle": "Gmina to Ja"
   },
   {
-    "data-season-number": "2",
-    "data-episode-number": "16",
-    "ratingValue": "8.62254"
+    "episodeNumber": "16",
+    "seasonNumber": "2",
+    "ratingValue": "8.62254",
+    "episodeTitle": "Lokalna rewolucja"
   },
   {
-    "data-season-number": "2",
-    "data-episode-number": "17",
-    "ratingValue": "8.57679"
+    "episodeNumber": "17",
+    "seasonNumber": "2",
+    "ratingValue": "8.57679",
+    "episodeTitle": "Honor parafii"
   },
   {
-    "data-season-number": "2",
-    "data-episode-number": "18",
-    "ratingValue": "8.60517"
+    "episodeNumber": "18",
+    "seasonNumber": "2",
+    "ratingValue": "8.60405",
+    "episodeTitle": "Europejski kandydat"
   },
   {
-    "data-season-number": "2",
-    "data-episode-number": "19",
-    "ratingValue": "8.48108"
+    "episodeNumber": "19",
+    "seasonNumber": "2",
+    "ratingValue": "8.48022",
+    "episodeTitle": "Rozwód z miłości"
   },
   {
-    "data-season-number": "2",
-    "data-episode-number": "20",
-    "ratingValue": "8.49088"
+    "episodeNumber": "20",
+    "seasonNumber": "2",
+    "ratingValue": "8.48998",
+    "episodeTitle": "Diabelskie porachunki"
   },
   {
-    "data-season-number": "2",
-    "data-episode-number": "21",
-    "ratingValue": "8.5807"
+    "episodeNumber": "21",
+    "seasonNumber": "2",
+    "ratingValue": "8.57963",
+    "episodeTitle": "Jesienna burza"
   },
   {
-    "data-season-number": "2",
-    "data-episode-number": "22",
-    "ratingValue": "8.66011"
+    "episodeNumber": "22",
+    "seasonNumber": "2",
+    "ratingValue": "8.65893",
+    "episodeTitle": "Diler pierogów"
   },
   {
-    "data-season-number": "2",
-    "data-episode-number": "23",
-    "ratingValue": "8.54766"
+    "episodeNumber": "23",
+    "seasonNumber": "2",
+    "ratingValue": "8.54664",
+    "episodeTitle": "Do dobrego lepiej przymusić"
   },
   {
-    "data-season-number": "2",
-    "data-episode-number": "24",
-    "ratingValue": "8.61121"
+    "episodeNumber": "24",
+    "seasonNumber": "2",
+    "ratingValue": "8.61121",
+    "episodeTitle": "Siła władzy"
   },
   {
-    "data-season-number": "2",
-    "data-episode-number": "25",
-    "ratingValue": "8.70057"
+    "episodeNumber": "25",
+    "seasonNumber": "2",
+    "ratingValue": "8.70057",
+    "episodeTitle": "Plan awaryjny"
   },
   {
-    "data-season-number": "2",
-    "data-episode-number": "26",
-    "ratingValue": "8.75836"
+    "episodeNumber": "26",
+    "seasonNumber": "2",
+    "ratingValue": "8.75836",
+    "episodeTitle": "Zgoda po polsku"
   },
   {
-    "data-season-number": "3",
-    "data-episode-number": "27",
-    "ratingValue": "8.52805"
+    "episodeNumber": "27",
+    "seasonNumber": "3",
+    "ratingValue": "8.52805",
+    "episodeTitle": "Płomień duży i mały"
   },
   {
-    "data-season-number": "3",
-    "data-episode-number": "28",
-    "ratingValue": "8.66472"
+    "episodeNumber": "28",
+    "seasonNumber": "3",
+    "ratingValue": "8.66472",
+    "episodeTitle": "Powrót demona"
   },
   {
-    "data-season-number": "3",
-    "data-episode-number": "29",
-    "ratingValue": "8.67906"
+    "episodeNumber": "29",
+    "seasonNumber": "3",
+    "ratingValue": "8.67906",
+    "episodeTitle": "W kleszczach terroru"
   },
   {
-    "data-season-number": "3",
-    "data-episode-number": "30",
-    "ratingValue": "8.69643"
+    "episodeNumber": "30",
+    "seasonNumber": "3",
+    "ratingValue": "8.69643",
+    "episodeTitle": "Fakt prasowy"
   },
   {
-    "data-season-number": "3",
-    "data-episode-number": "31",
-    "ratingValue": "8.74612"
+    "episodeNumber": "31",
+    "seasonNumber": "3",
+    "ratingValue": "8.74612",
+    "episodeTitle": "Radio interaktywne"
   },
   {
-    "data-season-number": "3",
-    "data-episode-number": "32",
-    "ratingValue": "8.57"
+    "episodeNumber": "32",
+    "seasonNumber": "3",
+    "ratingValue": "8.57",
+    "episodeTitle": "Wielkie odkrycie"
   },
   {
-    "data-season-number": "3",
-    "data-episode-number": "33",
-    "ratingValue": "8.56073"
+    "episodeNumber": "33",
+    "seasonNumber": "3",
+    "ratingValue": "8.56073",
+    "episodeTitle": "Sprawca"
   },
   {
-    "data-season-number": "3",
-    "data-episode-number": "34",
-    "ratingValue": "8.62874"
+    "episodeNumber": "34",
+    "seasonNumber": "3",
+    "ratingValue": "8.62874",
+    "episodeTitle": "Odsiecz"
   },
   {
-    "data-season-number": "3",
-    "data-episode-number": "35",
-    "ratingValue": "8.63221"
+    "episodeNumber": "35",
+    "seasonNumber": "3",
+    "ratingValue": "8.63221",
+    "episodeTitle": "Upadek obyczajów"
   },
   {
-    "data-season-number": "3",
-    "data-episode-number": "36",
-    "ratingValue": "8.64484"
+    "episodeNumber": "36",
+    "seasonNumber": "3",
+    "ratingValue": "8.64484",
+    "episodeTitle": "Miedź brzęcząca"
   },
   {
-    "data-season-number": "3",
-    "data-episode-number": "37",
-    "ratingValue": "8.61694"
+    "episodeNumber": "37",
+    "seasonNumber": "3",
+    "ratingValue": "8.61694",
+    "episodeTitle": "Zrozumieć kobietę"
   },
   {
-    "data-season-number": "3",
-    "data-episode-number": "38",
-    "ratingValue": "8.61866"
+    "episodeNumber": "38",
+    "seasonNumber": "3",
+    "ratingValue": "8.61866",
+    "episodeTitle": "Złoty deszcz"
   },
   {
-    "data-season-number": "3",
-    "data-episode-number": "39",
-    "ratingValue": "8.8469"
+    "episodeNumber": "39",
+    "seasonNumber": "3",
+    "ratingValue": "8.8469",
+    "episodeTitle": "Szczęśliwe rozwiązanie"
   },
   {
-    "data-season-number": "4",
-    "data-episode-number": "40",
-    "ratingValue": "8.47683"
+    "episodeNumber": "40",
+    "seasonNumber": "4",
+    "ratingValue": "8.47683",
+    "episodeTitle": "Szok poporodowy"
   },
   {
-    "data-season-number": "4",
-    "data-episode-number": "41",
-    "ratingValue": "8.586"
+    "episodeNumber": "41",
+    "seasonNumber": "4",
+    "ratingValue": "8.586",
+    "episodeTitle": "Sztormy emocjonalne"
   },
   {
-    "data-season-number": "4",
-    "data-episode-number": "42",
-    "ratingValue": "8.71739"
+    "episodeNumber": "42",
+    "seasonNumber": "4",
+    "ratingValue": "8.71739",
+    "episodeTitle": "Śluby i rozstania"
   },
   {
-    "data-season-number": "4",
-    "data-episode-number": "43",
-    "ratingValue": "8.60729"
+    "episodeNumber": "43",
+    "seasonNumber": "4",
+    "ratingValue": "8.60729",
+    "episodeTitle": "Agent"
   },
   {
-    "data-season-number": "4",
-    "data-episode-number": "44",
-    "ratingValue": "8.59717"
+    "episodeNumber": "44",
+    "seasonNumber": "4",
+    "ratingValue": "8.59717",
+    "episodeTitle": "Polityka i czary"
   },
   {
-    "data-season-number": "4",
-    "data-episode-number": "45",
-    "ratingValue": "8.58487"
+    "episodeNumber": "45",
+    "seasonNumber": "4",
+    "ratingValue": "8.58487",
+    "episodeTitle": "Wymiana międzypokoleniowa"
   },
   {
-    "data-season-number": "4",
-    "data-episode-number": "46",
-    "ratingValue": "8.59588"
+    "episodeNumber": "46",
+    "seasonNumber": "4",
+    "ratingValue": "8.59588",
+    "episodeTitle": "Dzieci śmieci"
   },
   {
-    "data-season-number": "4",
-    "data-episode-number": "47",
-    "ratingValue": "9.24205"
+    "episodeNumber": "47",
+    "seasonNumber": "4",
+    "ratingValue": "9.24205",
+    "episodeTitle": "W samo popołudnie"
   },
   {
-    "data-season-number": "4",
-    "data-episode-number": "48",
-    "ratingValue": "8.59592"
+    "episodeNumber": "48",
+    "seasonNumber": "4",
+    "ratingValue": "8.59592",
+    "episodeTitle": "Bohaterski strajk"
   },
   {
-    "data-season-number": "4",
-    "data-episode-number": "49",
-    "ratingValue": "8.7574"
+    "episodeNumber": "49",
+    "seasonNumber": "4",
+    "ratingValue": "8.7574",
+    "episodeTitle": "Debata"
   },
   {
-    "data-season-number": "4",
-    "data-episode-number": "50",
-    "ratingValue": "8.7163"
+    "episodeNumber": "50",
+    "seasonNumber": "4",
+    "ratingValue": "8.7163",
+    "episodeTitle": "Kontratak"
   },
   {
-    "data-season-number": "4",
-    "data-episode-number": "51",
-    "ratingValue": "8.62677"
+    "episodeNumber": "51",
+    "seasonNumber": "4",
+    "ratingValue": "8.62677",
+    "episodeTitle": "Fałszerze uczuć"
   },
   {
-    "data-season-number": "4",
-    "data-episode-number": "52",
-    "ratingValue": "8.90993"
+    "episodeNumber": "52",
+    "seasonNumber": "4",
+    "ratingValue": "8.90993",
+    "episodeTitle": "Zemsta i wybaczenie"
   },
   {
-    "data-season-number": "5",
-    "data-episode-number": "53",
-    "ratingValue": "8.24474"
+    "episodeNumber": "53",
+    "seasonNumber": "5",
+    "ratingValue": "8.24474",
+    "episodeTitle": "Msza obywatelska"
   },
   {
-    "data-season-number": "5",
-    "data-episode-number": "54",
-    "ratingValue": "8.32868"
+    "episodeNumber": "54",
+    "seasonNumber": "5",
+    "ratingValue": "8.32868",
+    "episodeTitle": "Czysty biznes"
   },
   {
-    "data-season-number": "5",
-    "data-episode-number": "55",
-    "ratingValue": "8.31352"
+    "episodeNumber": "55",
+    "seasonNumber": "5",
+    "ratingValue": "8.31352",
+    "episodeTitle": "Wielki powrót"
   },
   {
-    "data-season-number": "5",
-    "data-episode-number": "56",
-    "ratingValue": "8.43089"
+    "episodeNumber": "56",
+    "seasonNumber": "5",
+    "ratingValue": "8.43089",
+    "episodeTitle": "Amerykańska baza"
   },
   {
-    "data-season-number": "5",
-    "data-episode-number": "57",
-    "ratingValue": "8.41201"
+    "episodeNumber": "57",
+    "seasonNumber": "5",
+    "ratingValue": "8.41201",
+    "episodeTitle": "Człowiek z Rio"
   },
   {
-    "data-season-number": "5",
-    "data-episode-number": "58",
-    "ratingValue": "8.5176"
+    "episodeNumber": "58",
+    "seasonNumber": "5",
+    "ratingValue": "8.5176",
+    "episodeTitle": "Obcy Krajowcy"
   },
   {
-    "data-season-number": "5",
-    "data-episode-number": "59",
-    "ratingValue": "8.53816"
+    "episodeNumber": "59",
+    "seasonNumber": "5",
+    "ratingValue": "8.53816",
+    "episodeTitle": "Doktor Wezół"
   },
   {
-    "data-season-number": "5",
-    "data-episode-number": "60",
-    "ratingValue": "8.4188"
+    "episodeNumber": "60",
+    "seasonNumber": "5",
+    "ratingValue": "8.4188",
+    "episodeTitle": "Włoski rozłącznik"
   },
   {
-    "data-season-number": "5",
-    "data-episode-number": "61",
-    "ratingValue": "8.40043"
+    "episodeNumber": "61",
+    "seasonNumber": "5",
+    "ratingValue": "8.40043",
+    "episodeTitle": "Honor i zęby trzonowe"
   },
   {
-    "data-season-number": "5",
-    "data-episode-number": "62",
-    "ratingValue": "8.34989"
+    "episodeNumber": "62",
+    "seasonNumber": "5",
+    "ratingValue": "8.34989",
+    "episodeTitle": "Przymus rekreacji"
   },
   {
-    "data-season-number": "5",
-    "data-episode-number": "63",
-    "ratingValue": "8.45217"
+    "episodeNumber": "63",
+    "seasonNumber": "5",
+    "ratingValue": "8.45217",
+    "episodeTitle": "Przewroty kopernikańskie"
   },
   {
-    "data-season-number": "5",
-    "data-episode-number": "64",
-    "ratingValue": "8.41336"
+    "episodeNumber": "64",
+    "seasonNumber": "5",
+    "ratingValue": "8.41336",
+    "episodeTitle": "Nad Solejuków i Wargaczów domem"
   },
   {
-    "data-season-number": "5",
-    "data-episode-number": "65",
-    "ratingValue": "8.64744"
+    "episodeNumber": "65",
+    "seasonNumber": "5",
+    "ratingValue": "8.64744",
+    "episodeTitle": "Pakt z czartem"
   },
   {
-    "data-season-number": "6",
-    "data-episode-number": "66",
-    "ratingValue": "8.39496"
+    "episodeNumber": "66",
+    "seasonNumber": "6",
+    "ratingValue": "8.39496",
+    "episodeTitle": "Szlifierze diamentów"
   },
   {
-    "data-season-number": "6",
-    "data-episode-number": "67",
-    "ratingValue": "8.29677"
+    "episodeNumber": "67",
+    "seasonNumber": "6",
+    "ratingValue": "8.29677",
+    "episodeTitle": "Kozi róg"
   },
   {
-    "data-season-number": "6",
-    "data-episode-number": "68",
-    "ratingValue": "8.45415"
+    "episodeNumber": "68",
+    "seasonNumber": "6",
+    "ratingValue": "8.45415",
+    "episodeTitle": "Narracja negacji"
   },
   {
-    "data-season-number": "6",
-    "data-episode-number": "69",
-    "ratingValue": "8.35111"
+    "episodeNumber": "69",
+    "seasonNumber": "6",
+    "ratingValue": "8.35111",
+    "episodeTitle": "Wiatr w żaglach"
   },
   {
-    "data-season-number": "6",
-    "data-episode-number": "70",
-    "ratingValue": "8.32739"
+    "episodeNumber": "70",
+    "seasonNumber": "6",
+    "ratingValue": "8.32739",
+    "episodeTitle": "Seks nocy letniej"
   },
   {
-    "data-season-number": "6",
-    "data-episode-number": "71",
-    "ratingValue": "8.23146"
+    "episodeNumber": "71",
+    "seasonNumber": "6",
+    "ratingValue": "8.23146",
+    "episodeTitle": "Dzieci rewolucji"
   },
   {
-    "data-season-number": "6",
-    "data-episode-number": "72",
-    "ratingValue": "8.21395"
+    "episodeNumber": "72",
+    "seasonNumber": "6",
+    "ratingValue": "8.21395",
+    "episodeTitle": "Przeciek kontrolowany"
   },
   {
-    "data-season-number": "6",
-    "data-episode-number": "73",
-    "ratingValue": "8.18409"
+    "episodeNumber": "73",
+    "seasonNumber": "6",
+    "ratingValue": "8.18409",
+    "episodeTitle": "Świadek koronny"
   },
   {
-    "data-season-number": "6",
-    "data-episode-number": "74",
-    "ratingValue": "8.49192"
+    "episodeNumber": "74",
+    "seasonNumber": "6",
+    "ratingValue": "8.49192",
+    "episodeTitle": "Sztuka translacji"
   },
   {
-    "data-season-number": "6",
-    "data-episode-number": "75",
-    "ratingValue": "8.33491"
+    "episodeNumber": "75",
+    "seasonNumber": "6",
+    "ratingValue": "8.33491",
+    "episodeTitle": "Kontrrewolucja"
   },
   {
-    "data-season-number": "6",
-    "data-episode-number": "76",
-    "ratingValue": "8.34845"
+    "episodeNumber": "76",
+    "seasonNumber": "6",
+    "ratingValue": "8.34845",
+    "episodeTitle": "Tchnienie Las Vegas"
   },
   {
-    "data-season-number": "6",
-    "data-episode-number": "77",
-    "ratingValue": "8.39952"
+    "episodeNumber": "77",
+    "seasonNumber": "6",
+    "ratingValue": "8.39952",
+    "episodeTitle": "Przywódce"
   },
   {
-    "data-season-number": "6",
-    "data-episode-number": "78",
-    "ratingValue": "8.36408"
+    "episodeNumber": "78",
+    "seasonNumber": "6",
+    "ratingValue": "8.36408",
+    "episodeTitle": "Poród amatorski"
   },
   {
-    "data-season-number": "7",
-    "data-episode-number": "79",
-    "ratingValue": "8.05369"
+    "episodeNumber": "79",
+    "seasonNumber": "7",
+    "ratingValue": "8.05369",
+    "episodeTitle": "Wielbicielka z Warszawy"
   },
   {
-    "data-season-number": "7",
-    "data-episode-number": "80",
-    "ratingValue": "8.26376"
+    "episodeNumber": "80",
+    "seasonNumber": "7",
+    "ratingValue": "8.26376",
+    "episodeTitle": "Potęga immunitetu"
   },
   {
-    "data-season-number": "7",
-    "data-episode-number": "81",
-    "ratingValue": "8.21831"
+    "episodeNumber": "81",
+    "seasonNumber": "7",
+    "ratingValue": "8.21831",
+    "episodeTitle": "Podróż w czasie"
   },
   {
-    "data-season-number": "7",
-    "data-episode-number": "82",
-    "ratingValue": "8.25117"
+    "episodeNumber": "82",
+    "seasonNumber": "7",
+    "ratingValue": "8.25117",
+    "episodeTitle": "Tchnienie antyklerykalizmu"
   },
   {
-    "data-season-number": "7",
-    "data-episode-number": "83",
-    "ratingValue": "8.18545"
+    "episodeNumber": "83",
+    "seasonNumber": "7",
+    "ratingValue": "8.18545",
+    "episodeTitle": "Model życia artysty"
   },
   {
-    "data-season-number": "7",
-    "data-episode-number": "84",
-    "ratingValue": "8.17943"
+    "episodeNumber": "84",
+    "seasonNumber": "7",
+    "ratingValue": "8.17943",
+    "episodeTitle": "Słowo senatora"
   },
   {
-    "data-season-number": "7",
-    "data-episode-number": "85",
-    "ratingValue": "8.22951"
+    "episodeNumber": "85",
+    "seasonNumber": "7",
+    "ratingValue": "8.22951",
+    "episodeTitle": "Pojedynek czarownic"
   },
   {
-    "data-season-number": "7",
-    "data-episode-number": "86",
-    "ratingValue": "8.16708"
+    "episodeNumber": "86",
+    "seasonNumber": "7",
+    "ratingValue": "8.16708",
+    "episodeTitle": "Droga na szczyt"
   },
   {
-    "data-season-number": "7",
-    "data-episode-number": "87",
-    "ratingValue": "8.24163"
+    "episodeNumber": "87",
+    "seasonNumber": "7",
+    "ratingValue": "8.24163",
+    "episodeTitle": "Ciężka ręka prawa"
   },
   {
-    "data-season-number": "7",
-    "data-episode-number": "88",
-    "ratingValue": "8.79449"
+    "episodeNumber": "88",
+    "seasonNumber": "7",
+    "ratingValue": "8.79449",
+    "episodeTitle": "Koniec świata w Wilkowyjach"
   },
   {
-    "data-season-number": "7",
-    "data-episode-number": "89",
-    "ratingValue": "8.80525"
+    "episodeNumber": "89",
+    "seasonNumber": "7",
+    "ratingValue": "8.80525",
+    "episodeTitle": "Czas konspiry"
   },
   {
-    "data-season-number": "7",
-    "data-episode-number": "90",
-    "ratingValue": "8.43427"
+    "episodeNumber": "90",
+    "seasonNumber": "7",
+    "ratingValue": "8.43427",
+    "episodeTitle": "Trudne powroty"
   },
   {
-    "data-season-number": "7",
-    "data-episode-number": "91",
-    "ratingValue": "8.40633"
+    "episodeNumber": "91",
+    "seasonNumber": "7",
+    "ratingValue": "8.40633",
+    "episodeTitle": "Droga przez stos"
   },
-    {
-    "data-season-number": "8",
-    "data-episode-number": "92",
-    "ratingValue": "7.97613"
+  {
+    "episodeNumber": "92",
+    "seasonNumber": "8",
+    "ratingValue": "7.97613",
+    "episodeTitle": "Radio Mamrot"
   },
   {
-    "data-season-number": "8",
-    "data-episode-number": "93",
-    "ratingValue": "8.0736"
+    "episodeNumber": "93",
+    "seasonNumber": "8",
+    "ratingValue": "8.0736",
+    "episodeTitle": "Wykapany ojciec"
   },
   {
-    "data-season-number": "8",
-    "data-episode-number": "94",
-    "ratingValue": "8.12434"
+    "episodeNumber": "94",
+    "seasonNumber": "8",
+    "ratingValue": "8.12434",
+    "episodeTitle": "Wybacz mnie"
   },
   {
-    "data-season-number": "8",
-    "data-episode-number": "95",
-    "ratingValue": "8.07936"
+    "episodeNumber": "95",
+    "seasonNumber": "8",
+    "ratingValue": "8.07936",
+    "episodeTitle": "Czysta karta"
   },
   {
-    "data-season-number": "8",
-    "data-episode-number": "96",
-    "ratingValue": "8.12228"
+    "episodeNumber": "96",
+    "seasonNumber": "8",
+    "ratingValue": "8.12228",
+    "episodeTitle": "Obywatelskie obowiązki"
   },
   {
-    "data-season-number": "8",
-    "data-episode-number": "97",
-    "ratingValue": "8.40849"
+    "episodeNumber": "97",
+    "seasonNumber": "8",
+    "ratingValue": "8.40849",
+    "episodeTitle": "Nowatorska terapia"
   },
   {
-    "data-season-number": "8",
-    "data-episode-number": "98",
-    "ratingValue": "8.49105"
+    "episodeNumber": "98",
+    "seasonNumber": "8",
+    "ratingValue": "8.49105",
+    "episodeTitle": "Zbrodnia to niesłychana, pani zabija pana"
   },
   {
-    "data-season-number": "8",
-    "data-episode-number": "99",
-    "ratingValue": "8.02459"
+    "episodeNumber": "99",
+    "seasonNumber": "8",
+    "ratingValue": "8.02459",
+    "episodeTitle": "Los pogorzelca"
   },
   {
-    "data-season-number": "8",
-    "data-episode-number": "100",
-    "ratingValue": "8.0436"
+    "episodeNumber": "100",
+    "seasonNumber": "8",
+    "ratingValue": "8.0436",
+    "episodeTitle": "W blasku fleszy"
   },
   {
-    "data-season-number": "8",
-    "data-episode-number": "101",
-    "ratingValue": "8.23315"
+    "episodeNumber": "101",
+    "seasonNumber": "8",
+    "ratingValue": "8.23315",
+    "episodeTitle": "Grecy i Bułgarzy"
   },
   {
-    "data-season-number": "8",
-    "data-episode-number": "102",
-    "ratingValue": "8.12536"
+    "episodeNumber": "102",
+    "seasonNumber": "8",
+    "ratingValue": "8.12536",
+    "episodeTitle": "Jedźmy, nikt nie woła"
   },
   {
-    "data-season-number": "8",
-    "data-episode-number": "103",
-    "ratingValue": "8.47355"
+    "episodeNumber": "103",
+    "seasonNumber": "8",
+    "ratingValue": "8.47493",
+    "episodeTitle": "Nie rzucaj ziemi, skąd twój ród"
   },
   {
-    "data-season-number": "8",
-    "data-episode-number": "104",
-    "ratingValue": "8.29107"
+    "episodeNumber": "104",
+    "seasonNumber": "8",
+    "ratingValue": "8.29023",
+    "episodeTitle": "Wielkie otwarcie"
   },
   {
-    "data-season-number": "9",
-    "data-episode-number": "105",
-    "ratingValue": "7.65894"
+    "episodeNumber": "105",
+    "seasonNumber": "9",
+    "ratingValue": "7.65894",
+    "episodeTitle": "Nowe wyzwania"
   },
   {
-    "data-season-number": "9",
-    "data-episode-number": "106",
-    "ratingValue": "7.27055"
+    "episodeNumber": "106",
+    "seasonNumber": "9",
+    "ratingValue": "7.27055",
+    "episodeTitle": "Bardzo krótkie kariery"
   },
   {
-    "data-season-number": "9",
-    "data-episode-number": "107",
-    "ratingValue": "6.77994"
+    "episodeNumber": "107",
+    "seasonNumber": "9",
+    "ratingValue": "6.77994",
+    "episodeTitle": "W szponach zdrowia"
   },
   {
-    "data-season-number": "9",
-    "data-episode-number": "108",
-    "ratingValue": "6.57962"
+    "episodeNumber": "108",
+    "seasonNumber": "9",
+    "ratingValue": "6.57962",
+    "episodeTitle": "Gambit geniusza"
   },
   {
-    "data-season-number": "9",
-    "data-episode-number": "109",
-    "ratingValue": "7.71206"
+    "episodeNumber": "109",
+    "seasonNumber": "9",
+    "ratingValue": "7.71206",
+    "episodeTitle": "Potęga mediów"
   },
   {
-    "data-season-number": "9",
-    "data-episode-number": "110",
-    "ratingValue": "7.70428"
+    "episodeNumber": "110",
+    "seasonNumber": "9",
+    "ratingValue": "7.70428",
+    "episodeTitle": "Boska cząstka"
   },
   {
-    "data-season-number": "9",
-    "data-episode-number": "111",
-    "ratingValue": "7.78516"
+    "episodeNumber": "111",
+    "seasonNumber": "9",
+    "ratingValue": "7.78516",
+    "episodeTitle": "Istotny dysonans"
   },
   {
-    "data-season-number": "9",
-    "data-episode-number": "112",
-    "ratingValue": "7.64286"
+    "episodeNumber": "112",
+    "seasonNumber": "9",
+    "ratingValue": "7.64286",
+    "episodeTitle": "Demony Kusego"
   },
   {
-    "data-season-number": "9",
-    "data-episode-number": "113",
-    "ratingValue": "7.77016"
+    "episodeNumber": "113",
+    "seasonNumber": "9",
+    "ratingValue": "7.77016",
+    "episodeTitle": "Konie trojańskie"
   },
   {
-    "data-season-number": "9",
-    "data-episode-number": "114",
-    "ratingValue": "7.9102"
+    "episodeNumber": "114",
+    "seasonNumber": "9",
+    "ratingValue": "7.9102",
+    "episodeTitle": "Zamrożony kapitał"
   },
   {
-    "data-season-number": "9",
-    "data-episode-number": "115",
-    "ratingValue": "7.96327"
+    "episodeNumber": "115",
+    "seasonNumber": "9",
+    "ratingValue": "7.96327",
+    "episodeTitle": "Brzytwa dla tonącego"
   },
   {
-    "data-season-number": "9",
-    "data-episode-number": "116",
-    "ratingValue": "7.936"
+    "episodeNumber": "116",
+    "seasonNumber": "9",
+    "ratingValue": "7.936",
+    "episodeTitle": "Grzechy miłości"
   },
   {
-    "data-season-number": "9",
-    "data-episode-number": "117",
-    "ratingValue": "8.10465"
+    "episodeNumber": "117",
+    "seasonNumber": "9",
+    "ratingValue": "8.10465",
+    "episodeTitle": "Złoty róg"
   },
   {
-    "data-season-number": "10",
-    "data-episode-number": "118",
-    "ratingValue": "7.67382"
+    "episodeNumber": "118",
+    "seasonNumber": "10",
+    "ratingValue": "7.67382",
+    "episodeTitle": "Kto tu rządzi"
   },
   {
-    "data-season-number": "10",
-    "data-episode-number": "119",
-    "ratingValue": "7.64151"
+    "episodeNumber": "119",
+    "seasonNumber": "10",
+    "ratingValue": "7.64151",
+    "episodeTitle": "Partyzancka dola"
   },
   {
-    "data-season-number": "10",
-    "data-episode-number": "120",
-    "ratingValue": "7.8381"
+    "episodeNumber": "120",
+    "seasonNumber": "10",
+    "ratingValue": "7.8381",
+    "episodeTitle": "Próba ognia"
   },
   {
-    "data-season-number": "10",
-    "data-episode-number": "121",
-    "ratingValue": "7.73529"
+    "episodeNumber": "121",
+    "seasonNumber": "10",
+    "ratingValue": "7.73529",
+    "episodeTitle": "Geny nie kłamią"
   },
   {
-    "data-season-number": "10",
-    "data-episode-number": "122",
-    "ratingValue": "7.59898"
+    "episodeNumber": "122",
+    "seasonNumber": "10",
+    "ratingValue": "7.59898",
+    "episodeTitle": "Wszystko jest teatrem"
   },
   {
-    "data-season-number": "10",
-    "data-episode-number": "123",
-    "ratingValue": "7.65174"
+    "episodeNumber": "123",
+    "seasonNumber": "10",
+    "ratingValue": "7.65174",
+    "episodeTitle": "Depresja biskupa"
   },
   {
-    "data-season-number": "10",
-    "data-episode-number": "124",
-    "ratingValue": "7.88"
+    "episodeNumber": "124",
+    "seasonNumber": "10",
+    "ratingValue": "7.88",
+    "episodeTitle": "Wet za wet"
   },
   {
-    "data-season-number": "10",
-    "data-episode-number": "125",
-    "ratingValue": "7.87805"
+    "episodeNumber": "125",
+    "seasonNumber": "10",
+    "ratingValue": "7.87805",
+    "episodeTitle": "Polityczny zombie"
   },
   {
-    "data-season-number": "10",
-    "data-episode-number": "126",
-    "ratingValue": "7.69347"
+    "episodeNumber": "126",
+    "seasonNumber": "10",
+    "ratingValue": "7.69347",
+    "episodeTitle": "Edukacyjne dylematy"
   },
   {
-    "data-season-number": "10",
-    "data-episode-number": "127",
-    "ratingValue": "7.81818"
+    "episodeNumber": "127",
+    "seasonNumber": "10",
+    "ratingValue": "7.81818",
+    "episodeTitle": "Dominator"
   },
   {
-    "data-season-number": "10",
-    "data-episode-number": "128",
-    "ratingValue": "7.75789"
+    "episodeNumber": "128",
+    "seasonNumber": "10",
+    "ratingValue": "7.75789",
+    "episodeTitle": "Klauzula sumienia"
   },
   {
-    "data-season-number": "10",
-    "data-episode-number": "129",
-    "ratingValue": "7.93846"
+    "episodeNumber": "129",
+    "seasonNumber": "10",
+    "ratingValue": "7.93846",
+    "episodeTitle": "Ochotnicza straż kobiet"
   },
   {
-    "data-season-number": "10",
-    "data-episode-number": "130",
-    "ratingValue": "8.44737"
+    "episodeNumber": "130",
+    "seasonNumber": "10",
+    "ratingValue": "8.44737",
+    "episodeTitle": "Cuda, cuda ogłaszają"
   }
-];
+  ]

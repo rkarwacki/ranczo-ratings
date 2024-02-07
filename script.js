@@ -29,15 +29,16 @@
 
         // Iterate through the data and organize it by season
         data.forEach(entry => {
-            const seasonNumber = entry['data-season-number'];
-            const episodeNumber = entry['data-episode-number'];
+            const seasonNumber = entry['seasonNumber'];
+            const episodeNumber = entry['episodeNumber'];
+            const episodeTitle = entry['episodeTitle'];
             const ratingValue = parseFloat(entry['ratingValue']).toFixed(2);
 
             if (!seasonData.has(seasonNumber)) {
                 seasonData.set(seasonNumber, []);
             }
 
-            seasonData.get(seasonNumber).push({ episodeNumber, ratingValue });
+            seasonData.get(seasonNumber).push({ episodeNumber, ratingValue, episodeTitle });
         });
 
         // Create HTML elements for episode numbers
@@ -65,18 +66,35 @@
             seasonDiv.appendChild(seasonLabel);
 
             episodes.forEach(episode => {
-                const { episodeNumber, ratingValue } = episode;
+                const { episodeNumber, ratingValue, episodeTitle } = episode;
 
                 const episodeDiv = document.createElement('div');
                 episodeDiv.className = `episode ${getRatingClass(ratingValue)}`;
-                episodeDiv.textContent = ratingValue;
+
+                // Create tooltip element with episode title
+                const tooltip = document.createElement('div');
+                tooltip.className = 'tooltip';
+                tooltip.textContent = episodeTitle;
+                episodeDiv.appendChild(tooltip);
+
+                // Create episode number content
+                const episodeContent = document.createElement('div');
+                episodeContent.textContent = ratingValue;
+                episodeDiv.appendChild(episodeContent);
+
+                // Add event listener to show/hide tooltip on hover
+                episodeDiv.addEventListener('mouseenter', () => {
+                    tooltip.style.display = 'block';
+                });
+
+                episodeDiv.addEventListener('mouseleave', () => {
+                    tooltip.style.display = 'none';
+                });
+
                 seasonDiv.appendChild(episodeDiv);
             });
-
             tableContainer.appendChild(seasonDiv);
         });
     }
 
-
-        // Call the function with your JSON data
         createTable(jsonData);

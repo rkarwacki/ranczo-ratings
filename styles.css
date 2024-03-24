@@ -8,7 +8,7 @@ body {
 .table-container, title {
     text-align: center;
     white-space: nowrap;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 
 .title {
@@ -19,6 +19,10 @@ body {
     display: flex;
     vertical-align: top;
     align-items: center;
+}
+
+.season > div{
+    flex-shrink: 0;
 }
 
 .episode-label {
@@ -120,7 +124,6 @@ body {
     .table-container {
         text-align: center;
         white-space: nowrap;
-        overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
     }
 }
 

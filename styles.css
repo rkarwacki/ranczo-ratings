@@ -21,6 +21,10 @@ body {
     align-items: center;
 }
 
+.season > div{
+    flex-shrink: 0;
+}
+
 .episode-label {
     font-weight: bold;
     margin-right: 10px;
